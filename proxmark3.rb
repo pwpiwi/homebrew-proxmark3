@@ -34,8 +34,9 @@ class Proxmark3 < Formula
 	bin.install "client/default_pwd.dic" => "default_pwd.dic"
 	
 	# hardnested files
-	(bin/"hardnested/tables").mkpath
+	(bin/"hardnested").mkpath
 	(bin/"hardnested").install "client/hardnested/bf_bench_data.bin"
+	(bin/"hardnested/tables").mkpath
 	(bin/"hardnested/tables").install Dir["client/hardnested/tables/*"]
 
 	# lua libs for proxmark3 scripts
