@@ -5,15 +5,15 @@ class Proxmark3 < Formula
   sha256 "bace0dd34e35923bfd926cf0943e615a00b2588bb958a13afde3fd46cd34a821"
   head "https://github.com/pwpiwi/proxmark3.git", :branch => "travis_test"
 
-  depends_on "automake" => :build
+#  depends_on "automake" => :build
   depends_on "readline"
-  depends_on "p7zip" => :build
+#  depends_on "p7zip" => :build
   depends_on "libusb"
   depends_on "libusb-compat"
   depends_on "pkg-config" => :build
-  depends_on "wget"
+#  depends_on "wget"
   depends_on "qt5"
-  depends_on "perl"
+  depends_on "perl" => :build
   depends_on "proxmark/proxmark3/arm-none-eabi-gcc" => :build
 
   def install
